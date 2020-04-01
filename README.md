@@ -3,7 +3,7 @@
   
 ## Results
   In order to run the cluster analysis I standardized my data and created 5 different clusters.  The final result of this analysis produced the following 5 groupings:
-  
+  ![cluster output](
 
 
 ## Sources
