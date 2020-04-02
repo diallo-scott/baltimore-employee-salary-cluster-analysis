@@ -27,11 +27,18 @@
  4. Copy data from pivot table, excluding the final row, into a new tab for cluster analysis.  Insert 10-12 rows above the data and add a colum to the left to put in a "Simple" Dept ID and sequentially label each row of data 1,2,3,4,...
  5. In the two cells above each column (Annual salary, tenure, gross salary) calculate the mean (using = Average(column data)) and standard deviation (using =STDEV(column data)) of each column.
  6.  To the right of the data create 3 new columns for the z score of each of the original data columns.  To calculate use the z score use the Standardize function, where you can use the previously calculated means and standard deviations.
- 7. In the cells that were previously inserted above the data create a table.  The first column in cluster id, where you should label each cell sequentially 1 - 5.  
+ 7. In the cells that were previously inserted above the data create a table for the results of the anlaysis.  The first column is cluster id, where you should label each cell sequentially 1-5.  Then in the next column label it simple dept id, and input 5 random values which you created in Step 4.  Then to create the next four columns for DeptID and the z scores for annual salary, gross salary, and tenure you should use VLOOKUP with the simple dept id being the lookup value.
+ 8. Create five columns to the right of the zscore columns that you made in Step 6 for the distance squared between the z-score values for each dept id and the ones you used in the above table as the random nodes for each of the five clusters.  Use the SUMXMY2 function to do this.
+ 9. Create another column to the right of the ones created in the last step that calculates the minimum of the distance between that dept id's values and the five nodes.  Use the MIN function to do this.
+ 10. Create another column to the right of the one created in the last step that tells us which node that dept is closest to.  Use the MATCH function to do this.
+ 11. In the cell above the minimum distance column create a cell that sums all the minimum distance values.
+ 12. Finally we can run the solver to generate the final results.  We choose to minimize the value of the cell created in the last step.  For the changing variables we select the simple dept id column in the cluster output table.  We must constrain these values to be between 1 and the largest dept id and to be integer values.  Once we run the solver we will have the nodes to each of our clusters and the analysis is complete.
+
  
  
 
 
 ## Sources
+https://data.baltimorecity.gov/City-Government/Baltimore-City-Employee-Salaries-FY2019/6xv6-e66h
 https://foxbaltimore.com/news/project-baltimore/fox45-finds-more-six-figure-payroll-problems-at-city-schools
 https://www.wbaltv.com/article/dollar47m-spent-on-police-overtime-in-baltimore-top-recipients-names-released/23480417#
