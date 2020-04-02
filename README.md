@@ -33,10 +33,9 @@
  10. Create another column to the right of the one created in the last step that tells us which node that dept is closest to.  Use the MATCH function to do this.
  11. In the cell above the minimum distance column create a cell that sums all the minimum distance values.
  12. Finally we can run the solver to generate the final results.  We choose to minimize the value of the cell created in the last step.  For the changing variables we select the simple dept id column in the cluster output table.  We must constrain these values to be between 1 and the largest dept id and to be integer values.  Once we run the solver we will have the nodes to each of our clusters and the analysis is complete.
-
  
- 
-
+ ## Link to File with Raw and Analyzed Data
+ https://github.com/diallo-scott/baltimore-employee-salary-cluster-analysis/blob/master/Baltimore%20Salary%20Cluster%20Analysis%20and%20Raw%20Data.xlsx
 
 ## Sources
 https://data.baltimorecity.gov/City-Government/Baltimore-City-Employee-Salaries-FY2019/6xv6-e66h
