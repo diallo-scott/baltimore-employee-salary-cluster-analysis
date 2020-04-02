@@ -8,7 +8,9 @@
  This allows us to describe the five groupings based off of annual salary, gross salary, and tenure.  The 1st group with the cluster node being the Housing and Community Development department can be described by having annual and gross salaries just below the mean, and their tenure is almost one standard deviation below the mean.  This shows us that the 1st group seems to receive an adequate gross salary, since tenure and annual salary are both below mean.  
  
  The 2nd group with the cluster node being the Police Department is described by having annual salary more than 1 standard deviation from the mean.  Although their annual salary is above the city mean, gross salary and tenure are both almost 1 standard deviation above the mean as well.  This implies that this second group is one that is higher paid in terms of gross salary, but is still not overpaid since they have often worked for longer and their contracted annual salaries are also high.  
- The cluster node of the 3rd group is Highway Transportation department.  This group has annual and gross salaries that are below the mean by 0.8 and 0.5 standard deviations respectively, but they have a tenure that is more than 1 standard deviation above the mean.
+ The cluster node of the 3rd group is Highway Transportation department.  This group has annual and gross salaries that are below the mean, but they have a tenure that is more than 1 standard deviation above the mean.  This could imply that this group is underpaid, since they have longer tenures and lower salaries.  We should consider, however, that this could also show that these jobs are just lower paying due to other factors, such as education level requires, types of jobs available, and number of part-time vs full-time positions.
+ 
+ The 4th grouping has the cluster node of 
 
 
 ## Sources
